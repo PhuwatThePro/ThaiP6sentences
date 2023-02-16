@@ -41,6 +41,18 @@
 			<label for="q4c">D:</label>
 			<input type="radio" id="q3d" name="q3" value="d">
 		</fieldset>
+		
+		<fieldset>
+			<legend>Question 4:</legend>
+			<label for="q4a">A:</label>
+			<input type="radio" id="q4a" name="q4" value="a">
+			<label for="q4b">B:</label>
+			<input type="radio" id="q4b" name="q4" value="b">
+			<label for="q4c">C:</label>
+			<input type="radio" id="q4c" name="q4" value="c">
+			<label for="q4d">D:</label>
+			<input type="radio" id="q4d" name="q4" value="d">
+		</fieldset>
 		<!-- Repeat the fieldsets for each question -->
 		
 		<button type="button" onclick="submitAnswers()">Submit</button>
@@ -52,6 +64,7 @@
 			var q1 = document.querySelector('input[name="q1"]:checked').value;
 			var q2 = document.querySelector('input[name="q2"]:checked').value;
 			var q3 = document.querySelector('input[name="q3"]:checked').value;
+			var q4 = document.querySelector('input[name="q3"]:checked').value;
 			// Repeat for each question
 			
 			// Compare the selected answers with the correct answers
