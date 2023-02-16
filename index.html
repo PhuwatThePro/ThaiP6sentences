@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+</head>
+<body>
+	<h1>Quiz</h1>
+	<form>
+		<fieldset>
+			<legend>Question 1:</legend>
+			<label for="q1a">A:</label>
+			<input type="radio" id="q1a" name="q1" value="a">
+			<label for="q1b">B:</label>
+			<input type="radio" id="q1b" name="q1" value="b">
+			<label for="q1c">C:</label>
+			<input type="radio" id="q1c" name="q1" value="c">
+			<label for="q1d">D:</label>
+			<input type="radio" id="q1d" name="q1" value="d">
+		</fieldset>
+		
+		<fieldset>
+			<legend>Question 2:</legend>
+			<label for="q2a">A:</label>
+			<input type="radio" id="q2a" name="q2" value="a">
+			<label for="q2b">B:</label>
+			<input type="radio" id="q2b" name="q2" value="b">
+			<label for="q2c">C:</label>
+			<input type="radio" id="q2c" name="q2" value="c">
+			<label for="q2d">D:</label>
+			<input type="radio" id="q2d" name="q2" value="d">
+		</fieldset>
+		
+		<!-- Repeat the fieldsets for each question -->
+		
+		<button type="button" onclick="submitAnswers()">Submit</button>
+	</form>
+	
+	<script>
+		function submitAnswers() {
+			// Retrieve the answers selected by the user
+			var q1 = document.querySelector('input[name="q1"]:checked').value;
+			var q2 = document.querySelector('input[name="q2"]:checked').value;
+			// Repeat for each question
+			
+			// Compare the selected answers with the correct answers
+			var score = 0;
+			if (q1 === "a") {
+				score++;
+			}
+			if (q2 === "b") {
+				score++;
+			}
+			// Repeat for each question
+			
+			// Display the score
+			alert("You scored " + score + " out of 10.");
+		}
+	</script>
+</body>
+</html>
+

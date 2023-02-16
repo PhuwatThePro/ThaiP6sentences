@@ -1,2 +1,0 @@
-# ThaiP6sentences
-propro
